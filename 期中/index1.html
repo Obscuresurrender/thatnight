@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>目前資料庫中，酒條通產品的列表</title>
+    <style>
+        body {
+            font-family: "Times New Roman", "微軟正黑體", serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 10px;
+            background-color: white;
+            color: black;
+        }
+
+        /* 綠色外框容器 */
+        .outer-border {
+            border: 2px solid #006241;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 1100px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid red; /* 紅色表格細線 */
+            padding: 12px 5px;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .product-img {
+            width: 65px;
+            height: 65px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .footer-text {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-border">
+        <h3>目前資料庫中，酒條通 的所有產品列表</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>產品編碼</th>
+                    <th>產品名稱</th>
+                    <th>售價</th>
+                    <th>產品描述</th>
+                    <th>產品圖示</th>
+                    <th>現有庫存</th>
+                    <th>最後異動時間</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>tea01</td><td>俄羅斯經典伏特加</td><td>NT$ 1,200</td><td>經典伏特加酒體清爽，口感純淨順口，散發淡雅穀香。</td><td><img src="image/drink1.jpg" class="product-img"></td><td>120</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>tea02</td><td>波蘭高級伏特加</td><td>NT$ 950</td><td>質地柔順、香氣細膩，適合純飲或調製雞尾酒。</td><td><img src="image/drink2.jpg" class="product-img"></td><td>115</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>tea03</td><td>瑞典冰晶伏特加</td><td>NT$ 1,400</td><td>冰鎮後風味更加純粹，帶有清新草本與穀香。</td><td><img src="image/drink3.jpg" class="product-img"></td><td>108</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>tea04</td><td>美國頂級伏特加</td><td>NT$ 1,100</td><td>美式經典伏特加，口感乾淨、瓶底馥郁。</td><td><img src="image/drink4.jpg" class="product-img"></td><td>95</td><td>2026-04-29<br>20:30:00</td></tr>
+                
+                <tr><td>cake01</td><td>蘇格蘭單一麥芽威士忌</td><td>NT$ 2,500</td><td>麥芽香氣厚實，帶有橡木與熟果風味。</td><td><img src="image/cake1.jpg" class="product-img"></td><td>50</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>cake02</td><td>愛爾蘭威士忌</td><td>NT$ 1,800</td><td>口感柔順，帶有淡淡果香與香草尾韻。</td><td><img src="image/cake2.JPG" class="product-img"></td><td>45</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>cake03</td><td>美國波本威士忌</td><td>NT$ 2,000</td><td>帶有焦糖、香草與堅果香氣，口感飽滿濃郁。</td><td><img src="image/cake3.jpg" class="product-img"></td><td>60</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>cake04</td><td>日本頂級威士忌</td><td>NT$ 3,200</td><td>細緻優雅，融合花香與果香的平衡層次。</td><td><img src="image/cake4.jpg" class="product-img"></td><td>55</td><td>2026-04-29<br>20:30:00</td></tr>
+
+                <tr><td>bread01</td><td>古巴黑朗姆酒</td><td>NT$ 850</td><td>經典黑朗姆帶有焦糖與香草甘甜風味。</td><td><img src="image/bread1.JPG" class="product-img"></td><td>80</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>bread02</td><td>牙買加金朗姆酒</td><td>NT$ 920</td><td>金朗姆充滿熱帶水果與香料的熱情香氣。</td><td><img src="image/bread2.JPG" class="product-img"></td><td>70</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>bread03</td><td>巴西白朗姆酒</td><td>NT$ 750</td><td>清爽輕盈，適合調製經典雞尾酒。</td><td><img src="image/bread3.JPG" class="product-img"></td><td>90</td><td>2026-04-29<br>20:30:00</td></tr>
+                <tr><td>bread04</td><td>委內瑞拉頂級朗姆</td><td>NT$ 1,500</td><td>饒富層次，帶有焦糖、香草與果乾香。</td><td><img src="image/bread4.jpg" class="product-img"></td><td>85</td><td>2026-04-29<br>20:30:00</td></tr>
+            </tbody>
+        </table>
+
+        <div class="footer-text">目前共有 12 種 酒條通產品</div>
+    </div>
+
+</body>
+</html>
